@@ -1,29 +1,25 @@
-public class MyApp : Gtk.Application {
+/*
+ * SPDX-License-Identifier: GPL-3.0-or-later
+ * SPDX-FileCopyrightText: 2024 Josiah Moore <jojomoore04@gmail.com>
+ */
+ 
+ public class MyApp : Gtk.Application {
     public MyApp () {
         Object (
-            application_id: "com.github.yourusername.yourrepositoryname",
+            application_id: "com.github.Somebody-XD.BetterCalc",
             flags: ApplicationFlags.FLAGS_NONE
         );
     }
 
     protected override void activate () {
-    var button_hello = new Gtk.Button.with_label ("Click me!") {
-        margin_top = 12,
-        margin_bottom = 12,
-        margin_start = 12,
-        margin_end = 12
-};
-
-    button_hello.clicked.connect (() => {
-        button_hello.label = "Hello World!";
-        button_hello.sensitive = false;
-    });
+        var label = new Gtk.Label ("BetterCalc");
+   
         var main_window = new Gtk.ApplicationWindow (this) {
+            child = label,
             default_height = 300,
             default_width = 300,
-            title = "BetterCalc"
+            title = "BetterCalc (MODE: CALC)"
         };
-        main_window.child = button_hello;
         main_window.present ();
     }
 
@@ -31,3 +27,4 @@ public class MyApp : Gtk.Application {
         return new MyApp ().run (args);
     }
 }
+
