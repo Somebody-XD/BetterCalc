@@ -8,5 +8,6 @@ Features to be added:
 
 Current Features: 
 07/15/2024 - Calculator Mode
+07/20/2024 - Welcome Screen, Game (has not been in git repo yet.)
 
 Download BetterCalc Soon!
