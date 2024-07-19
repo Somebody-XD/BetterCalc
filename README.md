@@ -1,4 +1,4 @@
-NOTE: This project is a application for Linux, it will soon be ported for Windows and macOS. 
+NOTE: This project is a application for Linux, it will *soon* be ported for Windows and macOS. 
 
 BetterCalc!
 What do basic calculators do? Do boring things, instead spice things up with the all new app, BetterCalc! It *will* have support for videos, coding with a custom language, and more!
